@@ -10,3 +10,9 @@
     <li *ngFor="let currentDir of recipe.directions">{{currentDir}}</li>
   </ul>
 </div>
+
+<h3>{{changeMe}}</h3>
+
+<form>
+  <input [(ngModel)]="changeMe" type="text" name="change">
+</form>
