@@ -1,3 +1,12 @@
-<h1>
-  {{title}}
-</h1>
+<h1> Recipe Box </h1>
+<div *ngFor="let recipe of recipes">
+  <h3 (click)="saySomething()">{{recipe.name}}:</h3>
+  <ul>
+    <h3>Ingredients:</h3>
+    <li *ngFor="let currentIng of recipe.ingredients">{{currentIng}}</li>
+  </ul>
+  <ul>
+    <h3>Directions:</h3>
+    <li *ngFor="let currentDir of recipe.directions">{{currentDir}}</li>
+  </ul>
+</div>
